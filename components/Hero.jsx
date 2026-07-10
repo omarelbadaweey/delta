@@ -136,8 +136,8 @@ export default function Hero({ t = { hero: {} } }) {
   const textFade = useTransform(scrollYProgress, [0, 0.2, 0.4], [1, 1, 0]);
 
   // تأمين إضافي لقراءة القيم داخل الـ Text لمنع أي TypeError ران-تايم
-  const heroTitle = t?.hero?.title || "DELTA TECH";
-  const heroSubtitle = t?.hero?.subtitle || "انزل لأسفل لاكتشاف الإبداع";
+  const heroTitle = t?.hero?.title || "DELTA USA";
+  // const heroSubtitle = t?.hero?.subtitle || "انزل لأسفل لاكتشاف الإبداع";
   const heroTag = t?.hero?.tag || "مستقبل التعليم الرقمي";
   const heroH2_1 = t?.hero?.h2_1 || "نصمم تجارب تعليمية";
   const heroH2_2 = t?.hero?.h2_2 || "تخطف الأنظار وتدوم";
@@ -157,9 +157,9 @@ export default function Hero({ t = { hero: {} } }) {
             <h1 className="text-6xl md:text-9xl font-bold text-[#0B3C88] tracking-wide drop-shadow-sm">
               {heroTitle}
             </h1>
-            <p className="text-xs md:text-sm uppercase text-[#0B3C88]/70 font-medium tracking-widest animate-pulse">
+            {/* <p className="text-xs md:text-sm uppercase text-[#0B3C88]/70 font-medium tracking-widest animate-pulse">
               {heroSubtitle}
-            </p>
+            </p> */}
           </motion.div>
         </motion.div>
 
@@ -168,7 +168,7 @@ export default function Hero({ t = { hero: {} } }) {
           style={{ clipPath: clipPathValue , backgroundImage: "url('https://img.magnific.com/free-vector/abstract-organic-pattern-design-background_1048-19286.jpg?semt=ais_hybrid&w=740&q=80')", y: imageY }}
           className="absolute inset-0 w-full h-full bg-[#4d6993] text-white flex flex-col items-center justify-center p-6 text-center z-20 "
         >
-          <img src="logo.png" alt="" className="w-64 h-64 object-contain rounded-full" />
+          <img src="logo.png" alt="" className="w-64 h-64 object-cover rounded-full" />
         </motion.div>
 
       </div>

@@ -225,7 +225,7 @@ export default function Navbar({ lang = "ar", setLang, t = { nav: {} } }) {
         {/* اللوجو */}
         <div className="relative h-14 w-14 rounded-xl overflow-hidden group bg-neutral-50 border border-neutral-100 flex items-center justify-center">
           <div className="absolute inset-0 bg-[#38B6FF]/10 blur-md rounded-full group-hover:bg-[#38B6FF]/20 transition-colors duration-500" />
-          <span className="relative z-10 font-bold text-[#0B3C88] text-xl">Δ</span>
+          <img src="/logo.png" alt="Logo" className="relative z-10 font-bold text-[#0B3C88] text-xl" />
           <motion.div 
             initial={{ left: "-150%" }} animate={{ left: "150%" }}
             transition={{ repeat: Infinity, duration: 2.8, ease: "linear", delay: 0.5 }}

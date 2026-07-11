@@ -21,7 +21,7 @@ export default function DataSections({ t, lang }) {
   ];
 
   return (
-    <div className="bg-white min-h-screen pb-24">
+    <div className="bg-white min-h-screen py-24">
       
       {/* ==================== سكشن أعضاء هيئة التدريس ==================== */}
       <section id="faculty" className="py-20 max-w-7xl mx-auto px-6">
